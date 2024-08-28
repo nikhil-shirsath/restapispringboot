@@ -38,4 +38,27 @@ public class CourseServiceImpl implements CourseService {
 		return course ;
 	}
 
+	@Override
+	public Course deleteCourse(int courseId) {
+		Course c= getCourse(courseId);
+		if(c!=null) {
+			lst.remove(c);
+			return c;
+		}
+		return null;
+	}
+
+	@Override
+	public Course updateCourse(int courseId, Course course) {
+		Course c = getCourse(courseId);
+		//Course c1 = new Course(course.getCourseName(),course.getCouseDescp());
+		
+		if(c!=null) {
+			c.setCourseName(course.getCourseName());
+			c.setCouseDescp(course.getCouseDescp());
+			return c;
+		}
+		return null;
+	}
+
 }

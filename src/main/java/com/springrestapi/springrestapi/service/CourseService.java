@@ -10,4 +10,8 @@ public interface CourseService {
 	public Course getCourse(int courseId);
 
 	public Course addCourse(Course course);
+
+	public Course deleteCourse(int couseId);
+
+	public Course updateCourse(int courseId, Course course);
 }

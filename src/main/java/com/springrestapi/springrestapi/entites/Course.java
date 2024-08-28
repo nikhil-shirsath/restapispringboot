@@ -15,6 +15,13 @@ public class Course {
 		this.courseId = courseId;
 	}
 	
+	
+	
+	public Course(String courseName, String couseDescp) {
+		super();
+		this.courseName = courseName;
+		this.couseDescp = couseDescp;
+	}
 	public Course(int courseId, String courseName, String couseDescp) {
 		super();
 		this.courseId = courseId;
